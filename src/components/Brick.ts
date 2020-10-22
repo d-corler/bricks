@@ -1,4 +1,4 @@
-import { defineComponent, h, onMounted, PropType } from "vue";
+import { defineComponent, h, PropType } from "vue";
 
 import { Brick } from "@/plugins/core/core";
 
@@ -11,10 +11,6 @@ export default defineComponent({
     }
   },
   setup(props) {
-    onMounted(() => {
-      console.log("MOUNTED");
-    });
-
     return () =>
       h(
         "div",

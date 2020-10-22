@@ -12,9 +12,7 @@ export default defineComponent({
   setup() {
     const core = useCore();
 
-    return () => h(Brick, { brick: core.state.bricks[0] });
-
-    /*return () =>
+    return () =>
       h(
         "div",
         {
@@ -30,6 +28,6 @@ export default defineComponent({
             brick
           })
         )
-      );*/
+      );
   }
 });
