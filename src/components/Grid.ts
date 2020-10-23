@@ -1,5 +1,5 @@
 import { defineComponent, h } from "vue";
-import { useCore } from "@/plugins/core/masterKey";
+import { useCore } from "@/plugins/manager/masterKey";
 
 // Components
 import Brick from "@/components/Brick.ts";

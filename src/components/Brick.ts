@@ -1,12 +1,12 @@
-import { defineComponent, h, PropType } from "vue";
+import { defineComponent, h } from "vue";
 
-import { Brick } from "@/plugins/core/core";
+import { Brick } from "@/plugins/manager/core";
 
 export default defineComponent({
   name: "Brick",
   props: {
     brick: {
-      type: Object as PropType<Brick>,
+      type: Object,
       required: true
     }
   },
@@ -21,7 +21,7 @@ export default defineComponent({
             height: "10px"
           }
         },
-        props.brick.id
+        (props.brick as Brick).id
       );
   }
 });
